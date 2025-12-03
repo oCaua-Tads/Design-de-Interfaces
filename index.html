@@ -4,25 +4,31 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>GameNews - Trabalho Flexbox</title>
-<meta name="description" content="GameNews — Notícias e reviews do mundo dos games. Fique por dentro dos lançamentos, campeonatos e análises.">
-<meta name="keywords" content="games, notícias, e-sports, lançamentos, análises, reviews">
-<meta name="author" content="Cauã S. L.">
+  <meta name="description" content="GameNews — Notícias e reviews do mundo dos games. Fique por dentro dos lançamentos, campeonatos e análises.">
+  <meta name="keywords" content="games, notícias, e-sports, lançamentos, análises, reviews">
+  <meta name="author" content="Cauã S. L.">
 
-<meta property="og:title" content="GameNews — Notícias e reviews de games">
-<meta property="og:description" content="Confira o mundo dos games com atualizações diárias, campeonatos e análises exclusivas.">
-<meta property="og:image" content="https://oCaua-Tads.github.io/trabalho-flexbox/img/hornet-grande.webp">
-<meta property="og:url" content="https://oCaua-Tads.github.io/trabalho-flexbox/">
-<meta property="og:type" content="website">
+  <meta property="og:title" content="GameNews — Notícias e reviews de games">
+  <meta property="og:description" content="Confira o mundo dos games com atualizações diárias, campeonatos e análises exclusivas.">
+  <meta property="og:image" content="https://oCaua-Tads.github.io/trabalho-flexbox/img/hornet-grande.webp">
+  <meta property="og:url" content="https://oCaua-Tads.github.io/trabalho-flexbox/">
+  <meta property="og:type" content="website">
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="GameNews — Notícias e reviews de games">
-<meta name="twitter:description" content="As últimas novidades do universo dos games reunidas em um só lugar.">
-<meta name="twitter:image" content="https://oCaua-Tads.github.io/trabalho-flexbox/img/hornet-grande.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GameNews — Notícias e reviews de games">
+  <meta name="twitter:description" content="As últimas novidades do universo dos games reunidas em um só lugar.">
+  <meta name="twitter:image" content="https://oCaua-Tads.github.io/trabalho-flexbox/img/hornet-grande.webp">
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
+  <!-- BOOTSTRAP (CDN) - vindo antes do seu CSS para que seu CSS possa sobrescrever -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Overrides / tema do bootstrap (opcional) -->
+  <link rel="stylesheet" href="css/bootstrap.overrides.css">
+
+  <!-- seu CSS -->
   <link rel="stylesheet" href="css/styles.css" />
-  
 </head>
 <body>
   <header class="site-header">
@@ -31,11 +37,11 @@
       <p class="tag">Notícias e reviews de games</p>
     </div>
     <nav class="main-nav">
-  <a href="#inicio">Início</a>
-  <a href="#noticias">Notícias</a>
-  <a href="#contato">Contato</a>
-  <a href="#galeria">Galeria</a>
-</nav>
+      <a href="#inicio">Início</a>
+      <a href="#noticias">Notícias</a>
+      <a href="#contato">Contato</a>
+      <a href="#galeria">Galeria</a>
+    </nav>
   </header>
 
   <main class="main">
@@ -46,28 +52,30 @@
         <a class="read-more" href="#">Ler mais →</a>
       </article>
       <picture class="hero-image">
-  <source srcset="img/hornet-grande.webp" media="(min-width: 1024px)" type="image/webp">
-  <source srcset="img/hornet-media.webp" media="(min-width: 600px)" type="image/webp">
-  <img src="img/hornet-pequena.webp" alt="Imagem de destaque de Silksong" width="1200" height="675" loading="lazy">
-</picture>
+        <source srcset="img/hornet-grande.webp" media="(min-width: 1024px)" type="image/webp">
+        <source srcset="img/hornet-media.webp" media="(min-width: 600px)" type="image/webp">
+        <img src="img/hornet-pequena.webp" alt="Imagem de destaque de Silksong" width="1200" height="675" loading="lazy">
+      </picture>
     </section>
 
     <section class="extra-images">
-       <div class=complementos">
-          <img src="img/silksongUM.webp" alt="Image complemente 1">
-        </div>
-       <div class="hero-image">
-          <img src="img/silksongDois.webp" alt="Imagem complementar 2">
-        </div>
+      <!-- CORRIGIDO: aspas faltando -->
+      <div class="complementos">
+        <img src="img/silksongUM.webp" alt="Image complemente 1">
+      </div>
+      <div class="hero-image">
+        <img src="img/silksongDois.webp" alt="Imagem complementar 2">
+      </div>
     </section>
 
     <!-- SEGUNDA SEÇÃO -->
     <section id="noticias" class="grid">
       <article class="card">
-         <div class="campeonato">
+        <div class="campeonato">
           <img src="img/ESLdois.webp" alt="noticia um">
         </div>
-        <h3>CS:GO: ESL confirma novo campeonato IEM no Brasil <h3>
+        <!-- CORRIGIDO: fechar h3 corretamente -->
+        <h3>CS:GO: ESL confirma novo campeonato IEM no Brasil</h3>
         <p>ESL CS:GO Pro League tem pico de audiência de 400 mil espectadores simultâneos.</p>
         <a href="#">Ler</a>
       </article>
@@ -113,66 +121,155 @@
           <img src="img/brawl.jpg" alt="notica seis">
         </div>
         <h3>Novo patch note lançado!</h3>
-        <p>Com o mais recente campeonato oficial se aprocimando, desenvolvedores lançam mais uma atualização</p>
+        <p>Com o mais recente campeonato oficial se aproximando, desenvolvedores lançam mais uma atualização</p>
         <a href="#">Ler</a>
       </article>
     </section>
 
-    <!-- NOVA SEÇÃO 1: CONTATO -->
-<section id="contato" class="contato-section">
-  <div class="contato-grid">
-    <div class="contato-img">
-      <img src="img/fale.jpg" alt="Imagem de contato" /> <!-- colocar imagem aqui -->
+    <!-- CONTATO -->
+    <section id="contato" class="contato-section">
+      <div class="contato-grid">
+        <div class="contato-img">
+          <img src="img/fale.jpg" alt="Imagem de contato" />
+        </div>
+
+        <form class="contato-form">
+          <fieldset>
+            <label>Nome:
+              <input type="text" name="nome" placeholder="Seu nome completo">
+            </label>
+
+            <label>E-mail:
+              <input type="email" name="email" placeholder="seu@email.com">
+            </label>
+
+            <label>Data de nascimento:
+              <input type="date" name="nascimento">
+            </label>
+
+            <label>Plataforma favorita:
+              <select name="plataforma">
+                <option value="">Selecione</option>
+                <option>PC</option>
+                <option>Xbox</option>
+                <option>PlayStation</option>
+                <option>Nintendo</option>
+              </select>
+            </label>
+
+            <label>Mensagem:
+              <textarea name="mensagem" rows="4" placeholder="Digite sua mensagem"></textarea>
+            </label>
+
+            <button type="submit">Enviar</button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section id="galeria" class="galeria-section">
+      <h2>Galeria de Fotos</h2>
+     <div class="painel-fotos">
+
+  <div class="foto"
+       style="background-image: url('img/baruru.jpg');"
+       data-bs-toggle="modal" data-bs-target="#modalFoto1">
+  </div>
+
+  <div class="foto"
+       style="background-image: url('img/brawl.jpg');"
+       data-bs-toggle="modal" data-bs-target="#modalFoto2">
+  </div>
+
+  <div class="foto"
+       style="background-image: url('img/mario.jpg');"
+       data-bs-toggle="modal" data-bs-target="#modalFoto3">
+  </div>
+
+  <div class="foto"
+       style="background-image: url('img/lolzinho.webp');"
+       data-bs-toggle="modal" data-bs-target="#modalFoto4">
+  </div>
+
+  <div class="foto"
+       style="background-image: url('img/clashzin.avif');"
+       data-bs-toggle="modal" data-bs-target="#modalFoto5">
+  </div>
+
+</div>
+
+    </section>
+<!-- ============================ NOVA SEÇÃO (PEDIDO NO TRABALHO) ============================ -->
+
+<section id="extras" class="container my-5">
+
+  <h2 class="text-center mb-4">Conteúdos Extras</h2>
+
+  <!-- CARROSSEL BOOTSTRAP -->
+  <div id="carouselExample" class="carousel slide mb-5">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="img/mario.jpg" class="d-block w-100" alt="Mario">
+      </div>
+
+      <div class="carousel-item">
+        <img src="img/brawl.jpg" class="d-block w-100" alt="Brawl Stars">
+      </div>
+
+      <div class="carousel-item">
+        <img src="img/lolzinho.webp" class="d-block w-100" alt="League of Legends">
+      </div>
+
     </div>
 
-    <form class="contato-form">
-      <fieldset>
-        <label>Nome:
-          <input type="text" name="nome" placeholder="Seu nome completo">
-        </label>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
 
-        <label>E-mail:
-          <input type="email" name="email" placeholder="seu@email.com">
-        </label>
-
-        <label>Data de nascimento:
-          <input type="date" name="nascimento">
-        </label>
-
-        <label>Plataforma favorita:
-          <select name="plataforma">
-            <option value="">Selecione</option>
-            <option>PC</option>
-            <option>Xbox</option>
-            <option>PlayStation</option>
-            <option>Nintendo</option>
-          </select>
-        </label>
-
-        <label>Mensagem:
-          <textarea name="mensagem" rows="4" placeholder="Digite sua mensagem"></textarea>
-        </label>
-
-        <button type="submit">Enviar</button>
-      </fieldset>
-    </form>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
   </div>
+
+  <!-- TABELA BOOTSTRAP -->
+  <h3 class="mb-3">Tabela de Jogos Mais Aguardados</h3>
+
+  <div class="table-responsive">
+    <table class="table table-dark table-striped table-hover text-center">
+      <thead>
+        <tr>
+          <th>Jogo</th>
+          <th>Gênero</th>
+          <th>Data Estimada</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Hollow Knight: Silksong</td>
+          <td>Metroidvania</td>
+          <td>2025</td>
+        </tr>
+
+        <tr>
+          <td>GTA 6</td>
+          <td>Mundo Aberto</td>
+          <td>2025</td>
+        </tr>
+
+        <tr>
+          <td>Monster Hunter Wilds</td>
+          <td>Ação / RPG</td>
+          <td>2025</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
 </section>
 
-<!-- NOVA SEÇÃO 2: GALERIA -->
-<section id="galeria" class="galeria-section">
-  <h2>Galeria de Fotos</h2>
-  <div class="painel-fotos">
-    <div class="foto" style="background-image: url('img/baruru.jpg');"></div> <!-- colocar imagem aqui -->
-    <div class="foto" style="background-image: url('img/brawl.jpg');"></div> <!-- colocar imagem aqui -->
-    <div class="foto" style="background-image: url('img/mario.jpg');"></div> <!-- colocar imagem aqui -->
-    <div class="foto" style="background-image: url('img/lolzinho.webp');"></div> <!-- colocar imagem aqui -->
-    <div class="foto" style="background-image: url('img/clashzin.avif');"></div> <!-- colocar imagem aqui -->
-  </div>
-</section>
-
-
-    <!-- Voltar ao topo -->
     <div class="back-top">
       <a href="#topo">↑ Voltar ao topo</a>
     </div>
@@ -181,5 +278,60 @@
   <footer class="site-footer">
     <p>© 2025 GameNews — Projeto Flexbox</p>
   </footer>
+
+  <!-- BOOTSTRAP JS (bundle já inclui Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- ========================= MODAIS DA GALERIA ========================= -->
+
+<!-- Modal 1 -->
+<div class="modal fade" id="modalFoto1" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark text-light">
+      <div class="modal-header">
+        <h5 class="modal-title">Foto: Baruru</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/baruru.jpg" class="img-fluid rounded mb-3" alt="Imagem Baruru">
+        <p>Imagem promocional do jogo brawl stars.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="modalFoto2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark text-light">
+      <div class="modal-header">
+        <h5 class="modal-title">Foto: Brawl Stars</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/brawl.jpg" class="img-fluid rounded mb-3" alt="Brawl Stars">
+        <p>Cena promocional do campeonato oficial, destacando personagens populares.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="modalFoto3" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark text-light">
+      <div class="modal-header">
+        <h5 class="modal-title">Foto: Mario Wonder</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/mario.jpg" class="img-fluid rounded mb-3" alt="Mario">
+        <p>Imagem promocional do lançamento recente da franquia Mario.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
