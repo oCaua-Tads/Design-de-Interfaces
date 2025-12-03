@@ -218,10 +218,6 @@ body{
   .card img { height:150px; }
 }
 
-/* ===========================
-   NOVAS SEÇÕES GRID (Contato / Galeria)
-   =========================== */
-
 /* Contato */
 .contato-section {
   background: var(--panel);
@@ -330,7 +326,7 @@ body{
   cursor: pointer;
 }
 
-/* Garante que Bootstrap não quebre seu layout */
+/* Garante que Bootstrap não quebre meu layout */
 .site-header,
 .main,
 .site-footer {
